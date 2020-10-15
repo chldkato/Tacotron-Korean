@@ -6,10 +6,10 @@
 
     * [KSS](https://www.kaggle.com/bryanpark/korean-single-speaker-speech-dataset)
 
-2. **`~/tacotron_korean`에 학습 데이터 준비**
+2. **`~/Tacotron-Korean`에 학습 데이터 준비**
 
    ```
-   tacotron_korean
+   Tacotron-Korean
      |- kss
          |- 1
          |- 2
