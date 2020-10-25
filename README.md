@@ -1,5 +1,10 @@
 # Tacotron Korean TTS
 
+### Requirements
+* Python = 3.7.x
+* tensorflow-gpu < 2
+* jamo
+
 ### Training
 
 1. **한국어 음성 데이터 다운로드**
