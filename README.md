@@ -1,8 +1,8 @@
 # Tacotron Korean TTS
 
 ### Requirements
-* Python = 3.7.x
-* tensorflow-gpu < 2
+* Python 3.7
+* tensorflow < 2.0
 * jamo
 
 ### Training
