@@ -38,8 +38,7 @@ class Synthesizer:
         pred = np.power(10.0, pred * 0.05)
         wav = griffin_lim(pred ** 1.5)
         wav = scipy.signal.lfilter([1], [1, -preemphasis], wav)
-        endpoint = librosa.effects.split(wav, frame_length=win_length, hop_length=hop_length)[0, 1]
-        wav = wav[:endpoint]
+        wav = librosa.effects.trim(wav, frame_length=win_length, hop_length=hop_length)[0]
         wav = wav.astype(np.float32)
         scipy.io.wavfile.write(os.path.join(args.save_dir, '{}.wav'.format(idx)), sample_rate, wav)
 
